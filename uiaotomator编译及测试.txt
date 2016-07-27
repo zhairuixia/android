@@ -1,0 +1,19 @@
+#使用下列命令启动模拟器android-x86：
+kvm -m 2.5G -drive file=android-5.1.raw,format=raw,index=0,media=disk -net nic -net user,hostfwd=tcp::12345-:5555 -vga cirrus
+#uiautomator编译及测试-步骤如下：
+##1.使用eclipse创建Java Project,添加android库并编写java程序。
+##2.创建build文件
+$android create uitest-project -n caltest -t 1 -p /home/zz/workspace/caltest/
+注：-n 后面的caltest是将来生成的jar包的名字，1为使用android list查看到的你使用的android库的版本号的id。-p后面为目录名。
+##3.编译生成jar
+进入工程目录，运行ant build
+BUILD SUCCESSFUL提示成功。
+##4.连接模拟器android-x86
+$adb connect localhost:12345
+##5.查看连接的设备
+$./adb devices 
+##6.push 到测试机
+$adb push /home/zz/workspace/caltest/bin/caltest.jar /data/local/tmp/
+##7.运行jar文件执行测试
+$adb shell uiautomator runtest caltest.jar -c com.cal.CalTest
+测试成功后显示 OK。
