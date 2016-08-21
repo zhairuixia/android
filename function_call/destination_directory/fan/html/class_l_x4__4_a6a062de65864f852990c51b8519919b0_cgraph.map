@@ -1,0 +1,11 @@
+<map id="LX4_4.main" name="LX4_4.main">
+<area shape="rect" id="node2" href="$class_fan.html#af95cee271f2412a52ac920f00b6ac90a" title="Fan.setSpeed" alt="" coords="146,5,249,32"/>
+<area shape="rect" id="node3" href="$class_fan.html#a13134b8be4efdd7403af98d763ce2199" title="Fan.setRadius" alt="" coords="144,56,251,83"/>
+<area shape="rect" id="node4" href="$class_fan.html#afef0f6a39b56269a2592dcff067052d8" title="Fan.setColor" alt="" coords="149,107,246,133"/>
+<area shape="rect" id="node5" href="$class_fan.html#a4f7fd9e0ef71e219270d02ac36ad328b" title="Fan.setOn" alt="" coords="156,157,239,184"/>
+<area shape="rect" id="node6" href="$class_fan.html#a23b23cb45d15ed0e80d8a88c9300c5c6" title="Fan.toString" alt="" coords="151,208,244,235"/>
+<area shape="rect" id="node7" href="$class_fan.html#ade7739493388a263603f8c8c931a79b7" title="Fan.getOn" alt="" coords="311,132,393,159"/>
+<area shape="rect" id="node8" href="$class_fan.html#aa837e535d579b0ce52a18ee45165975b" title="Fan.getSpeed" alt="" coords="301,183,403,209"/>
+<area shape="rect" id="node9" href="$class_fan.html#a778ca7d0fdac62de6200efdd030c2d85" title="Fan.getColor" alt="" coords="303,233,401,260"/>
+<area shape="rect" id="node10" href="$class_fan.html#a80c807d2d5415806393f6334188a42aa" title="Fan.getRadius" alt="" coords="299,284,405,311"/>
+</map>

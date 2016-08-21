@@ -1,0 +1,6 @@
+<map id="Fan.toString" name="Fan.toString">
+<area shape="rect" id="node2" href="$class_fan.html#ade7739493388a263603f8c8c931a79b7" title="Fan.getOn" alt="" coords="159,5,241,32"/>
+<area shape="rect" id="node3" href="$class_fan.html#aa837e535d579b0ce52a18ee45165975b" title="Fan.getSpeed" alt="" coords="149,56,251,83"/>
+<area shape="rect" id="node4" href="$class_fan.html#a778ca7d0fdac62de6200efdd030c2d85" title="Fan.getColor" alt="" coords="151,107,249,133"/>
+<area shape="rect" id="node5" href="$class_fan.html#a80c807d2d5415806393f6334188a42aa" title="Fan.getRadius" alt="" coords="147,157,253,184"/>
+</map>
