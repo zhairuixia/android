@@ -1,0 +1,46 @@
+空操作指令
+空操作指令的助记符为nop。它的值为00，通知被用来作对齐代码之用，无实际操作。
+
+数据操作指令
+数据操作指令为move。move指令的原型为 move 目标，源。 move 指令根据字节码大小与类型不同，后面会跟上不同的后缀。
+move-object/from16 vAA, vBBBB 为对象赋值。源寄存器为8位，目的寄存器为16位。
+move-object/16 vAAAA,vBBBB 为对象复制。源寄存器与目的寄存器都为16位
+move-result-wide vAA 将上一个invoke类型指令操作的双（没有-wide则是 单 ）字非对象结果赋给vAA寄存器
+move-result-object vAA 将上一个invoke类型指令操作的非对象结果赋给vAA寄存器
+move-exception vAA 保存一个运行时发生的异常到vAA寄存器。这条指令必须是异常发生屎的异常处理器的一条指令。否则的话，指令无效。
+
+方法调用指令
+方法调用指令负责调用类实例的方法。它的基础指令为invoke，方法嗲用指令有 invoke-kind {vC,vD,vE,vF,vG},meth@BBBB 与 invoke-kind/range {vCCCC, ... ,vNNNN},meth@BBBB 两类，两类指令在作用上并无不同，只是后则在设置参数寄存器时使用了range来指定寄存器的范围。根据方法类型的不同，共有如下 5 条方法调用指令：
+invoke-virtual 或 invoke-virtual/range 调用实例的虚方法
+invoke-super 或 invoke-super/range 调用实例的父类方法
+invoke-direct 或 invoke-direct/range 调用实例的直接方法
+invoke-static 或 invoke-static/range 调用实例的静态方法
+invoke-interface 或 invoke-interface/range 调用实例的接口方法
+
+异常指令
+Dalvik指令集有一条指令用来抛出异常
+throw vAA 抛出vAA寄存器中指定类型的异常。
+
+跳转指令
+跳转指令用于从当前地址跳转到孩子定的偏移处。Dalvik指令集中有三种跳转指令：无条件跳转（goto）、分支跳转（switch）与条件跳转（if）。
+goto +AA 无条件跳转到指定偏移处，偏移量AA不能为0
+goto/16 +AAAA 无条件跳转到指定偏移处，偏移量AAAA不能为0。
+goto/32 +AAAAAAAA 无条件跳转到指定偏移处。
+.......
+
+数据定义指令
+数据定义指令用来定义程序中用到的常量、字符串、类等数据。它的基础字节码为const。
+const/4 vA,#+B 将数值符号扩展为32位后赋给寄存器 vA
+const/16 vAA,#+BBBB 将数值符号扩展为32位后赋给寄存器 vAA
+const vAA,#+BBBBBBBB 将数值付给寄存器vAA
+const/high16 vAA,#+BBBB0000 将数值右边 0 扩展为32位后赋给寄存器vAA
+const-wide/16 vAA,#+BBBB 将数值符号扩展64位后赋给寄存器对vAA
+const-wide vAA,#+BBBBBBBBBBBBBBBB 将数值赋给寄存器对vAA
+const-wide/high16 vAA,#+BBBB000000000000 将数值右边 0 扩展为64位后付给寄存器对 vAA
+const-string vAA,string@BBBB 通过字符串索引构造一个字符串并赋给寄存器对 vAA
+const-string/jumbo vAA,string@BBBBBBBB 通过字符串索引（较大） 构造一个字符串并付给寄存器对vAA
+const-class vAA,type@BBBB 通过类型索引获取一个类引用并付给寄存器 vAA
+const-class/jumbo vAAAA,type@BBBBBBBB 通过给定的类型那个索引获取一个类索引并付给寄存器vAAAA（这条指令占用两个字节，值为0x00ff，是Android4.0中新增的指令）
+
+参考链接：
+http://www.cnblogs.com/larrylawrence/p/3829982.html
