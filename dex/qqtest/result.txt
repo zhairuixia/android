@@ -1,0 +1,58 @@
+0002b0:                                         com.qq.QqTest.<init>:()V
+7010 0900 0000                         0000 <init>:()
+        0000 line=13
+0002c8:                                         com.qq.QqTest.testqq:()V
+6e10 0c00 0c00                         0004 getUiDevice:()
+6e10 0100 0200                         0008 wakeUp:()
+6e10 0000 0200                         000d isScreenOn:()
+7120 0b00 7600                         0011 assertTrue:(Ljava/lang/String;Z)
+7100 1100 0000                         0014 getRuntime:()
+6e20 1000 7600                         001a exec:(Ljava/lang/String;)
+6e30 0d00 6c07                         001f sleep:(J)
+6e30 0d00 6c07                         0024 sleep:(J)
+7010 0600 0600                         002b <init>:()
+6e20 0700 7600                         0030 resourceId:(Ljava/lang/String;)
+7020 0200 6100                         0034 <init>:(Lcom/android/uiautomator/core/UiSelector;)
+6e10 0400 0100                         0037 clickAndWaitForNewWindow:()
+6e30 0d00 8c09                         003a sleep:(J)
+7010 0600 0600                         0041 <init>:()
+6e20 0800 7600                         0046 text:(Ljava/lang/String;)
+7020 0200 6500                         004a <init>:(Lcom/android/uiautomator/core/UiSelector;)
+6e10 0300 0500                         004d click:()
+6e20 0500 6500                         0052 setText:(Ljava/lang/String;)
+6e30 0d00 8c09                         0055 sleep:(J)
+7010 0600 0600                         005c <init>:()
+6e20 0700 7600                         0061 resourceId:(Ljava/lang/String;)
+7020 0200 6400                         0065 <init>:(Lcom/android/uiautomator/core/UiSelector;)
+6e10 0300 0400                         0068 click:()
+6e20 0500 6400                         006d setText:(Ljava/lang/String;)
+6e30 0d00 8c09                         0070 sleep:(J)
+7010 0600 0600                         0077 <init>:()
+6e20 0700 7600                         007c resourceId:(Ljava/lang/String;)
+7020 0200 6000                         0080 <init>:(Lcom/android/uiautomator/core/UiSelector;)
+6e10 0300 0000                         0083 click:()
+6e30 0d00 ac0b                         0086 sleep:(J)
+6e10 0f00 0300                         008b printStackTrace:()
+        0004 line=16
+        0008 line=18
+        000b line=19
+        0014 line=23
+        001d line=25
+        0022 line=30
+        0027 line=31
+        0037 line=32
+        003a line=33
+        003d line=35
+        004d line=36
+        0050 line=37
+        0055 line=38
+        0058 line=40
+        0068 line=41
+        006b line=42
+        0070 line=43
+        0073 line=45
+        0083 line=46
+        0086 line=47
+        0089 line=50
+        008a line=26
+        008b line=28
