@@ -1,0 +1,135 @@
+Processing 'classes.dex'...
+Opened 'classes.dex', DEX version '035'
+DEX file header:
+magic               : 'dex\n035\0'
+checksum            : cb3376c5
+signature           : 9c6a...b917
+file_size           : 908
+header_size         : 112
+link_size           : 0
+link_off            : 0 (0x000000)
+string_ids_size     : 19
+string_ids_off      : 112 (0x000070)
+type_ids_size       : 7
+type_ids_off        : 188 (0x0000bc)
+proto_ids_size       : 3
+proto_ids_off        : 216 (0x0000d8)
+field_ids_size      : 1
+field_ids_off       : 252 (0x0000fc)
+method_ids_size     : 6
+method_ids_off      : 260 (0x000104)
+class_defs_size     : 1
+class_defs_off      : 308 (0x000134)
+data_size           : 568
+data_off            : 340 (0x000154)
+
+Class #0 header:
+class_idx           : 0
+access_flags        : 1 (0x0001)
+superclass_idx      : 2
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 6
+annotations_off     : 0 (0x000000)
+class_data_off      : 723 (0x0002d3)
+static_fields_size  : 0
+instance_fields_size: 0
+direct_methods_size : 3
+virtual_methods_size: 1
+
+Class #0            -
+  Class descriptor  : 'Lcom/call/Test;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/call/Test;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+000154:                                        |[000154] com.call.Test.<init>:()V
+000164: 7010 0500 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0005
+00016a: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=3
+      locals        : 
+        0x0000 - 0x0004 reg=0 this Lcom/call/Test; 
+
+    #1              : (in Lcom/call/Test;)
+      name          : 'main'
+      type          : '([Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 15 16-bit code units
+00016c:                                        |[00016c] com.call.Test.main:([Ljava/lang/String;)V
+00017c: 2200 0000                              |0000: new-instance v0, Lcom/call/Test; // type@0000
+000180: 7010 0000 0000                         |0002: invoke-direct {v0}, Lcom/call/Test;.<init>:()V // method@0000
+000186: 6e10 0200 0000                         |0005: invoke-virtual {v0}, Lcom/call/Test;.say:()V // method@0002
+00018c: 7100 0300 0000                         |0008: invoke-static {}, Lcom/call/Test;.see:()V // method@0003
+000192: 7100 0300 0000                         |000b: invoke-static {}, Lcom/call/Test;.see:()V // method@0003
+000198: 0e00                                   |000e: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=16
+        0x0005 line=18
+        0x0008 line=20
+        0x000b line=22
+        0x000e line=24
+      locals        : 
+        0x0005 - 0x000f reg=0 test Lcom/call/Test; 
+        0x0000 - 0x000f reg=1 args [Ljava/lang/String; 
+
+    #2              : (in Lcom/call/Test;)
+      name          : 'see'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 2
+      insns size    : 8 16-bit code units
+00019c:                                        |[00019c] com.call.Test.see:()V
+0001ac: 6200 0000                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0000
+0001b0: 1a01 1000                              |0002: const-string v1, "see" // string@0010
+0001b4: 6e20 0400 1000                         |0004: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0004
+0001ba: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=12
+        0x0007 line=13
+      locals        : 
+
+  Virtual methods   -
+    #0              : (in Lcom/call/Test;)
+      name          : 'say'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 8 16-bit code units
+0001bc:                                        |[0001bc] com.call.Test.say:()V
+0001cc: 6200 0000                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0000
+0001d0: 1a01 0b00                              |0002: const-string v1, "hello" // string@000b
+0001d4: 6e20 0400 1000                         |0004: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(Ljava/lang/String;)V // method@0004
+0001da: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=7
+        0x0007 line=8
+      locals        : 
+        0x0000 - 0x0008 reg=2 this Lcom/call/Test; 
+
+  source_file_idx   : 6 (Test.java)
+
