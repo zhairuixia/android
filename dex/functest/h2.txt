@@ -1,0 +1,64 @@
+0002a0     com.func.Outer.Inner.<init>:(Lcom/func/Outer;)V
+0002b4    0002    Ljava/lang/Object  <init>:()
+        0000 line=11
+        0005 line=12
+0002c4     com.func.Outer.Inner.inner_f1:()V
+0002dc    0004    Ljava/io/PrintStream  println:(I)
+0002ea    000b    Ljava/io/PrintStream  println:(I)
+0002f8    0012    Lcom/func/Outer  access$000:(Lcom/func/Outer;)
+000300    0016    Ljava/io/PrintStream  println:(I)
+00030e    001d    Lcom/func/Outer  access$100:(Lcom/func/Outer;)
+000316    0021    Ljava/io/PrintStream  println:(I)
+000320    0026    Lcom/func/Outer  access$200:()
+000328    002a    Ljava/io/PrintStream  println:(I)
+00032e    002d    Lcom/func/Outer  outer_f1:()
+000338    0032    Lcom/func/Outer  outer_f2:()
+        0000 line=17
+        0007 line=20
+        000e line=23
+        0019 line=26
+        0024 line=27
+        002d line=29
+        0030 line=30
+        0035 line=31
+000340     com.func.Outer.<clinit>:()V
+        0000 line=4
+000358     com.func.Outer.<init>:()V
+000368    0000    Ljava/lang/Object  <init>:()
+        0000 line=3
+        0003 line=5
+        0007 line=6
+000380     com.func.Outer.access$000:(Lcom/func/Outer;)I
+        0000 line=3
+000398     com.func.Outer.access$100:(Lcom/func/Outer;)I
+        0000 line=3
+0003b0     com.func.Outer.access$200:()I
+        0000 line=3
+0003c8     com.func.Outer.main:([Ljava/lang/String;)V
+0003dc    0002    Lcom/func/Outer  <init>:()
+0003e6    0007    Ljava/lang/Object  getClass:()
+0003ec    000a    Lcom/func/Outer$Inner  <init>:(Lcom/func/Outer;)
+0003f2    000d    Lcom/func/Outer$Inner  inner_f1:()
+        0000 line=48
+        0005 line=49
+        000d line=50
+        0010 line=51
+0003fc     com.func.Outer.outer_f1:()V
+        0000 line=8
+000410     com.func.Outer.outer_f4:()V
+000424    0002    Lcom/func/Outer  <init>:()
+00042e    0007    Ljava/lang/Object  getClass:()
+000434    000a    Lcom/func/Outer$Inner  <init>:(Lcom/func/Outer;)
+00043a    000d    Lcom/func/Outer$Inner  inner_f1:()
+        0000 line=41
+        0005 line=43
+        000d line=45
+        0010 line=46
+000444     com.func.Outer.outer_f2:()V
+        0000 line=10
+000458     com.func.Outer.outer_f3:()V
+00046c    0002    Lcom/func/Outer$Inner  <init>:(Lcom/func/Outer;)
+000472    0005    Lcom/func/Outer$Inner  inner_f1:()
+        0000 line=35
+        0005 line=36
+        0008 line=37
