@@ -1,0 +1,83 @@
+类个数：2
+Class #0 :
+  direct_methods: 1
+  virtual_methods: 1
+  路径: Lcom/func/Outer$Inner
+  Direct methods    -
+    #0              : in Lcom/func/Outer$Inner
+    方法名          : <init>
+    入口地址        : 0002a0
+    调用方法列表    : 
+	行号	目标地址      字节码地址	被调方法路径			被调方法名
+	11	0002b4        0x0002		Ljava/lang/Object  		<init>:()V 
+  Virtual methods   -
+    #0              : (in Lcom/func/Outer$Inner;)
+    方法名          : inner_f1
+    入口地址        : 0002c4
+    调用方法列表    : 
+	行号	目标地址      字节码地址	被调方法路径			被调方法名
+	17	0002dc        0x0004		Ljava/io/PrintStream  		println:(I)V 
+	20	0002ea        0x000b		Ljava/io/PrintStream  		println:(I)V 
+	23	0002f8        0x0012		Lcom/func/Outer  		access$000:(Lcom/func/Outer;)I 
+	23	000300        0x0016		Ljava/io/PrintStream  		println:(I)V 
+	26	00030e        0x001d		Lcom/func/Outer  		access$100:(Lcom/func/Outer;)I 
+	26	000316        0x0021		Ljava/io/PrintStream  		println:(I)V 
+	27	000320        0x0026		Lcom/func/Outer  		access$200:()I 
+	27	000328        0x002a		Ljava/io/PrintStream  		println:(I)V 
+	29	00032e        0x002d		Lcom/func/Outer  		outer_f1:()V 
+	30	000338        0x0032		Lcom/func/Outer  		outer_f2:()V 
+Class #1 :
+  direct_methods: 8
+  virtual_methods: 2
+  路径: Lcom/func/Outer
+  Direct methods    -
+    #0              : in Lcom/func/Outer
+    方法名          : <clinit>
+    入口地址        : 000340
+    #1              : in Lcom/func/Outer
+    方法名          : <init>
+    入口地址        : 000358
+    调用方法列表    : 
+	行号	目标地址      字节码地址	被调方法路径			被调方法名
+	3	000368        0x0000		Ljava/lang/Object  		<init>:()V 
+    #2              : in Lcom/func/Outer
+    方法名          : access$000
+    入口地址        : 000380
+    #3              : in Lcom/func/Outer
+    方法名          : access$100
+    入口地址        : 000398
+    #4              : in Lcom/func/Outer
+    方法名          : access$200
+    入口地址        : 0003b0
+    #5              : in Lcom/func/Outer
+    方法名          : main
+    入口地址        : 0003c8
+    调用方法列表    : 
+	行号	目标地址      字节码地址	被调方法路径			被调方法名
+	48	0003dc        0x0002		Lcom/func/Outer  		<init>:()V 
+	49	0003e6        0x0007		Ljava/lang/Object  		getClass:()Ljava/lang/Class; 
+	49	0003ec        0x000a		Lcom/func/Outer$Inner  		<init>:(Lcom/func/Outer;)V 
+	50	0003f2        0x000d		Lcom/func/Outer$Inner  		inner_f1:()V 
+    #6              : in Lcom/func/Outer
+    方法名          : outer_f1
+    入口地址        : 0003fc
+    #7              : in Lcom/func/Outer
+    方法名          : outer_f4
+    入口地址        : 000410
+    调用方法列表    : 
+	行号	目标地址      字节码地址	被调方法路径			被调方法名
+	41	000424        0x0002		Lcom/func/Outer  		<init>:()V 
+	43	00042e        0x0007		Ljava/lang/Object  		getClass:()Ljava/lang/Class; 
+	43	000434        0x000a		Lcom/func/Outer$Inner  		<init>:(Lcom/func/Outer;)V 
+	45	00043a        0x000d		Lcom/func/Outer$Inner  		inner_f1:()V 
+  Virtual methods   -
+    #0              : (in Lcom/func/Outer;)
+    方法名          : outer_f2
+    入口地址        : 000444
+    #1              : (in Lcom/func/Outer;)
+    方法名          : outer_f3
+    入口地址        : 000458
+    调用方法列表    : 
+	行号	目标地址      字节码地址	被调方法路径			被调方法名
+	35	00046c        0x0002		Lcom/func/Outer$Inner  		<init>:(Lcom/func/Outer;)V 
+	36	000472        0x0005		Lcom/func/Outer$Inner  		inner_f1:()V 

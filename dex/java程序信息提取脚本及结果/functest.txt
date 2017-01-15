@@ -1,0 +1,369 @@
+Processing 'classes.dex'...
+Opened 'classes.dex', DEX version '035'
+DEX file header:
+magic               : 'dex\n035\0'
+checksum            : eca20fa2
+signature           : 3d91...66cb
+file_size           : 2096
+header_size         : 112
+link_size           : 0
+link_off            : 0 (0x000000)
+string_ids_size     : 44
+string_ids_off      : 112 (0x000070)
+type_ids_size       : 12
+type_ids_off        : 288 (0x000120)
+proto_ids_size       : 7
+proto_ids_off        : 336 (0x000150)
+field_ids_size      : 6
+field_ids_off       : 420 (0x0001a4)
+method_ids_size     : 15
+method_ids_off      : 468 (0x0001d4)
+class_defs_size     : 2
+class_defs_off      : 588 (0x00024c)
+data_size           : 1444
+data_off            : 652 (0x00028c)
+
+Class #0 header:
+class_idx           : 1
+access_flags        : 0 (0x0000)
+superclass_idx      : 8
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 15
+annotations_off     : 1148 (0x00047c)
+class_data_off      : 1822 (0x00071e)
+static_fields_size  : 0
+instance_fields_size: 2
+direct_methods_size : 1
+virtual_methods_size: 1
+
+Class #0            -
+  Class descriptor  : 'Lcom/func/Outer$Inner;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/func/Outer$Inner;)
+      name          : 'j'
+      type          : 'I'
+      access        : 0x0000 ()
+    #1              : (in Lcom/func/Outer$Inner;)
+      name          : 'this$0'
+      type          : 'Lcom/func/Outer;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/func/Outer$Inner;)
+      name          : '<init>'
+      type          : '(Lcom/func/Outer;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 1
+      insns size    : 10 16-bit code units
+0002a0:                                        |[0002a0] com.func.Outer.Inner.<init>:(Lcom/func/Outer;)V
+0002b0: 5b12 0100                              |0000: iput-object v2, v1, Lcom/func/Outer$Inner;.this$0:Lcom/func/Outer; // field@0001
+0002b4: 7010 0d00 0100                         |0002: invoke-direct {v1}, Ljava/lang/Object;.<init>:()V // method@000d
+0002ba: 1300 6400                              |0005: const/16 v0, #int 100 // #64
+0002be: 5910 0000                              |0007: iput v0, v1, Lcom/func/Outer$Inner;.j:I // field@0000
+0002c2: 0e00                                   |0009: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=11
+        0x0005 line=12
+      locals        : 
+        0x0000 - 0x000a reg=1 this Lcom/func/Outer$Inner; 
+        0x0000 - 0x000a reg=2 this$0 Lcom/func/Outer; 
+
+  Virtual methods   -
+    #0              : (in Lcom/func/Outer$Inner;)
+      name          : 'inner_f1'
+      type          : '()V'
+      access        : 0x0000 ()
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 54 16-bit code units
+0002c4:                                        |[0002c4] com.func.Outer.Inner.inner_f1:()V
+0002d4: 6200 0500                              |0000: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0005
+0002d8: 5221 0000                              |0002: iget v1, v2, Lcom/func/Outer$Inner;.j:I // field@0000
+0002dc: 6e20 0c00 1000                         |0004: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(I)V // method@000c
+0002e2: 6200 0500                              |0007: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0005
+0002e6: 5221 0000                              |0009: iget v1, v2, Lcom/func/Outer$Inner;.j:I // field@0000
+0002ea: 6e20 0c00 1000                         |000b: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(I)V // method@000c
+0002f0: 6200 0500                              |000e: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0005
+0002f4: 5421 0100                              |0010: iget-object v1, v2, Lcom/func/Outer$Inner;.this$0:Lcom/func/Outer; // field@0001
+0002f8: 7110 0400 0100                         |0012: invoke-static {v1}, Lcom/func/Outer;.access$000:(Lcom/func/Outer;)I // method@0004
+0002fe: 0a01                                   |0015: move-result v1
+000300: 6e20 0c00 1000                         |0016: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(I)V // method@000c
+000306: 6200 0500                              |0019: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0005
+00030a: 5421 0100                              |001b: iget-object v1, v2, Lcom/func/Outer$Inner;.this$0:Lcom/func/Outer; // field@0001
+00030e: 7110 0500 0100                         |001d: invoke-static {v1}, Lcom/func/Outer;.access$100:(Lcom/func/Outer;)I // method@0005
+000314: 0a01                                   |0020: move-result v1
+000316: 6e20 0c00 1000                         |0021: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(I)V // method@000c
+00031c: 6200 0500                              |0024: sget-object v0, Ljava/lang/System;.out:Ljava/io/PrintStream; // field@0005
+000320: 7100 0600 0000                         |0026: invoke-static {}, Lcom/func/Outer;.access$200:()I // method@0006
+000326: 0a01                                   |0029: move-result v1
+000328: 6e20 0c00 1000                         |002a: invoke-virtual {v0, v1}, Ljava/io/PrintStream;.println:(I)V // method@000c
+00032e: 7100 0800 0000                         |002d: invoke-static {}, Lcom/func/Outer;.outer_f1:()V // method@0008
+000334: 5420 0100                              |0030: iget-object v0, v2, Lcom/func/Outer$Inner;.this$0:Lcom/func/Outer; // field@0001
+000338: 6e10 0900 0000                         |0032: invoke-virtual {v0}, Lcom/func/Outer;.outer_f2:()V // method@0009
+00033e: 0e00                                   |0035: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=17
+        0x0007 line=20
+        0x000e line=23
+        0x0019 line=26
+        0x0024 line=27
+        0x002d line=29
+        0x0030 line=30
+        0x0035 line=31
+      locals        : 
+        0x0000 - 0x0036 reg=2 this Lcom/func/Outer$Inner; 
+
+  source_file_idx   : 15 (Outer.java)
+
+Class #1 header:
+class_idx           : 2
+access_flags        : 1 (0x0001)
+superclass_idx      : 8
+interfaces_off      : 0 (0x000000)
+source_file_idx     : 15
+annotations_off     : 1164 (0x00048c)
+class_data_off      : 1841 (0x000731)
+static_fields_size  : 1
+instance_fields_size: 2
+direct_methods_size : 8
+virtual_methods_size: 2
+
+Class #1            -
+  Class descriptor  : 'Lcom/func/Outer;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/func/Outer;)
+      name          : 'i'
+      type          : 'I'
+      access        : 0x000a (PRIVATE STATIC)
+  Instance fields   -
+    #0              : (in Lcom/func/Outer;)
+      name          : 'j'
+      type          : 'I'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Lcom/func/Outer;)
+      name          : 'k'
+      type          : 'I'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/func/Outer;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 4 16-bit code units
+000340:                                        |[000340] com.func.Outer.<clinit>:()V
+000350: 1210                                   |0000: const/4 v0, #int 1 // #1
+000352: 6700 0200                              |0001: sput v0, Lcom/func/Outer;.i:I // field@0002
+000356: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=4
+      locals        : 
+
+    #1              : (in Lcom/func/Outer;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 12 16-bit code units
+000358:                                        |[000358] com.func.Outer.<init>:()V
+000368: 7010 0d00 0100                         |0000: invoke-direct {v1}, Ljava/lang/Object;.<init>:()V // method@000d
+00036e: 1300 0a00                              |0003: const/16 v0, #int 10 // #a
+000372: 5910 0300                              |0005: iput v0, v1, Lcom/func/Outer;.j:I // field@0003
+000376: 1300 1400                              |0007: const/16 v0, #int 20 // #14
+00037a: 5910 0400                              |0009: iput v0, v1, Lcom/func/Outer;.k:I // field@0004
+00037e: 0e00                                   |000b: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=3
+        0x0003 line=5
+        0x0007 line=6
+      locals        : 
+        0x0000 - 0x000c reg=1 this Lcom/func/Outer; 
+
+    #2              : (in Lcom/func/Outer;)
+      name          : 'access$000'
+      type          : '(Lcom/func/Outer;)I'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+000380:                                        |[000380] com.func.Outer.access$000:(Lcom/func/Outer;)I
+000390: 5210 0300                              |0000: iget v0, v1, Lcom/func/Outer;.j:I // field@0003
+000394: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     : 
+        0x0000 line=3
+      locals        : 
+        0x0000 - 0x0003 reg=1 x0 Lcom/func/Outer; 
+
+    #3              : (in Lcom/func/Outer;)
+      name          : 'access$100'
+      type          : '(Lcom/func/Outer;)I'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+000398:                                        |[000398] com.func.Outer.access$100:(Lcom/func/Outer;)I
+0003a8: 5210 0400                              |0000: iget v0, v1, Lcom/func/Outer;.k:I // field@0004
+0003ac: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     : 
+        0x0000 line=3
+      locals        : 
+        0x0000 - 0x0003 reg=1 x0 Lcom/func/Outer; 
+
+    #4              : (in Lcom/func/Outer;)
+      name          : 'access$200'
+      type          : '()I'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+0003b0:                                        |[0003b0] com.func.Outer.access$200:()I
+0003c0: 6000 0200                              |0000: sget v0, Lcom/func/Outer;.i:I // field@0002
+0003c4: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     : 
+        0x0000 line=3
+      locals        : 
+
+    #5              : (in Lcom/func/Outer;)
+      name          : 'main'
+      type          : '([Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 17 16-bit code units
+0003c8:                                        |[0003c8] com.func.Outer.main:([Ljava/lang/String;)V
+0003d8: 2200 0200                              |0000: new-instance v0, Lcom/func/Outer; // type@0002
+0003dc: 7010 0300 0000                         |0002: invoke-direct {v0}, Lcom/func/Outer;.<init>:()V // method@0003
+0003e2: 2201 0100                              |0005: new-instance v1, Lcom/func/Outer$Inner; // type@0001
+0003e6: 6e10 0e00 0000                         |0007: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@000e
+0003ec: 7020 0000 0100                         |000a: invoke-direct {v1, v0}, Lcom/func/Outer$Inner;.<init>:(Lcom/func/Outer;)V // method@0000
+0003f2: 6e10 0100 0100                         |000d: invoke-virtual {v1}, Lcom/func/Outer$Inner;.inner_f1:()V // method@0001
+0003f8: 0e00                                   |0010: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=48
+        0x0005 line=49
+        0x000d line=50
+        0x0010 line=51
+      locals        : 
+        0x0005 - 0x0011 reg=0 out Lcom/func/Outer; 
+        0x000d - 0x0011 reg=1 outin Lcom/func/Outer$Inner; 
+        0x0000 - 0x0011 reg=2 args [Ljava/lang/String; 
+
+    #6              : (in Lcom/func/Outer;)
+      name          : 'outer_f1'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 0
+      ins           : 0
+      outs          : 0
+      insns size    : 1 16-bit code units
+0003fc:                                        |[0003fc] com.func.Outer.outer_f1:()V
+00040c: 0e00                                   |0000: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=8
+      locals        : 
+
+    #7              : (in Lcom/func/Outer;)
+      name          : 'outer_f4'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 2
+      insns size    : 17 16-bit code units
+000410:                                        |[000410] com.func.Outer.outer_f4:()V
+000420: 2201 0200                              |0000: new-instance v1, Lcom/func/Outer; // type@0002
+000424: 7010 0300 0100                         |0002: invoke-direct {v1}, Lcom/func/Outer;.<init>:()V // method@0003
+00042a: 2200 0100                              |0005: new-instance v0, Lcom/func/Outer$Inner; // type@0001
+00042e: 6e10 0e00 0100                         |0007: invoke-virtual {v1}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@000e
+000434: 7020 0000 1000                         |000a: invoke-direct {v0, v1}, Lcom/func/Outer$Inner;.<init>:(Lcom/func/Outer;)V // method@0000
+00043a: 6e10 0100 0000                         |000d: invoke-virtual {v0}, Lcom/func/Outer$Inner;.inner_f1:()V // method@0001
+000440: 0e00                                   |0010: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=41
+        0x0005 line=43
+        0x000d line=45
+        0x0010 line=46
+      locals        : 
+        0x000d - 0x0011 reg=0 inner Lcom/func/Outer$Inner; 
+        0x0005 - 0x0011 reg=1 out Lcom/func/Outer; 
+
+  Virtual methods   -
+    #0              : (in Lcom/func/Outer;)
+      name          : 'outer_f2'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 1 16-bit code units
+000444:                                        |[000444] com.func.Outer.outer_f2:()V
+000454: 0e00                                   |0000: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=10
+      locals        : 
+        0x0000 - 0x0001 reg=0 this Lcom/func/Outer; 
+
+    #1              : (in Lcom/func/Outer;)
+      name          : 'outer_f3'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 9 16-bit code units
+000458:                                        |[000458] com.func.Outer.outer_f3:()V
+000468: 2200 0100                              |0000: new-instance v0, Lcom/func/Outer$Inner; // type@0001
+00046c: 7020 0000 1000                         |0002: invoke-direct {v0, v1}, Lcom/func/Outer$Inner;.<init>:(Lcom/func/Outer;)V // method@0000
+000472: 6e10 0100 0000                         |0005: invoke-virtual {v0}, Lcom/func/Outer$Inner;.inner_f1:()V // method@0001
+000478: 0e00                                   |0008: return-void
+      catches       : (none)
+      positions     : 
+        0x0000 line=35
+        0x0005 line=36
+        0x0008 line=37
+      locals        : 
+        0x0005 - 0x0009 reg=0 inner Lcom/func/Outer$Inner; 
+        0x0000 - 0x0009 reg=1 this Lcom/func/Outer; 
+
+  source_file_idx   : 15 (Outer.java)
+
